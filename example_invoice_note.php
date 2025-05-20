@@ -1,16 +1,7 @@
-# qaoc
-
-For the code tracking
-
-This repository contains example snippets used for invoice status updates and payment deletion notes.
-
-Example PHP snippet:
-```php
 <?php
-// Note when invoice status changes
+// Example snippet to add a note when invoice status changes
 $notes = "Invoice #{$customer_invoice_no} status was changed from '{$previous_status_text}' to '{$inv_status_text}' by {$username} on {$status_change_datetime}.";
 
-// Append a note when a payment is deleted from the invoice
+// Example snippet to append a note when a payment is deleted from an invoice
 $notes .= "\nPayment on invoice #{$customer_invoice_no} was deleted by {$username} on " . date('Y-m-d H:i:s') . ".";
 ?>
-```
